@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://Characters/Player_Motion.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Player_Sprite.png" type="Texture" id=2]
@@ -49,6 +49,8 @@
 [ext_resource path="res://Assets/Climb_Animation/player_climb0010.png" type="Texture" id=47]
 [ext_resource path="res://Assets/Move_Animation/player_move0029.png" type="Texture" id=48]
 [ext_resource path="res://Assets/PlayerInteractAnims/player_interact_simple.png" type="Texture" id=49]
+[ext_resource path="res://Assets/PlayerInteractAnims/player_info_interaction_up.png" type="Texture" id=50]
+[ext_resource path="res://Assets/PlayerInteractAnims/player_info_interaction_down.png" type="Texture" id=51]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -67,14 +69,24 @@ animations = [ {
 "name": "climb",
 "speed": 18.0
 }, {
+"frames": [ ExtResource( 31 ) ],
+"loop": true,
+"name": "climb_idle",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 49 ) ],
 "loop": true,
 "name": "interact_simple",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 31 ) ],
+"frames": [ ExtResource( 50 ) ],
 "loop": true,
-"name": "climb_idle",
+"name": "interact_info_up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 51 ) ],
+"loop": true,
+"name": "interact_info_down",
 "speed": 5.0
 } ]
 
